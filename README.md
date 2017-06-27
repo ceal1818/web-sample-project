@@ -5,11 +5,12 @@ Para empezar a trabajar en este proyecto es necesario seguir las siguientes inst
 ## Crear tabla de usuarios
 1. En el directorio **sql** encontraremos el fichero **app-dump.sql** que contiene la estructura de la tabla "users" que necesitamos para la práctica.
 
-2. Para poder utilizar crear la tabla y cargar estos datos de pruebas necesitamos ejecutar estos datos en MySQL.
+2. Para poder utilizar crear la tabla y cargar estos datos de pruebas necesitamos ejecutar estos datos con el MySQL Client desde cualquier ordenador donde este instalado.
 
-´´´
+```[shell]
 mysql -h[HOST_MYSQL_SERVER] -u appuser -p app < app-dump.sql
-´´´
+
+```
 
 ## Listar usuarios.
 
@@ -17,7 +18,7 @@ mysql -h[HOST_MYSQL_SERVER] -u appuser -p app < app-dump.sql
 
 ```[php]
     private static $dbName = 'app' ;
-    private static $dbHost = [ip] ;
+    private static $dbHost = [HOST_MYSQL_SERVER] ;
     private static $dbUsername = 'appuser';
     private static $dbUserPassword = [password];
 ```
