@@ -37,13 +37,13 @@ mysql -h[HOST_MYSQL_SERVER] -u appuser -p app < app-dump.sql
 		echo '<td width=250>';
 		// Acceso a la pantalla para ver un usuario
 		echo '<a class="btn" href="#">Read</a>';
-        echo ' ';
-        // Acceso a la pantalla para actualizar un usuario
-        echo '<a class="btn btn-success" href="#">Update</a>';
-        echo ' ';
-        // Acceso a la pantalla para eliminar un usuario
-        echo '<a class="btn btn-danger" href="#">Delete</a>';
-        echo '</td>';
+        	echo ' ';
+        	// Acceso a la pantalla para actualizar un usuario
+        	echo '<a class="btn btn-success" href="#">Update</a>';
+        	echo ' ';
+        	// Acceso a la pantalla para eliminar un usuario
+        	echo '<a class="btn btn-danger" href="#">Delete</a>';
+        	echo '</td>';
 		echo '</tr>';
         }
 	Database::disconnect();
