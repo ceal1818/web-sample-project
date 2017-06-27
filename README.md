@@ -3,7 +3,13 @@
 Para empezar a trabajar en este proyecto es necesario seguir las siguientes instrucciones:
 
 ## Crear tabla de usuarios
-1. 
+1. En el directorio **sql** encontraremos el fichero **app-dump.sql** que contiene la estructura de la tabla "users" que necesitamos para la práctica.
+
+2. Para poder utilizar crear la tabla y cargar estos datos de pruebas necesitamos ejecutar estos datos en MySQL.
+
+´´´
+mysql -h[HOST_MYSQL_SERVER] -u appuser -p app < app-dump.sql
+´´´
 
 ## Listar usuarios.
 
@@ -450,5 +456,4 @@ echo '<a class="btn btn-danger" href="delete.php?id='.$row['id'].'">Delete</a>';
 ```
 
 Después de realizar estos pasos podríamos probar el CRUD de usuarios que hemos creado en PHP7.
-
 
